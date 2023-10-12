@@ -3,7 +3,8 @@
 import { Navbar } from 'flowbite-react';
 import { DarkThemeToggle, Flowbite } from 'flowbite-react';
 
-const theme = {
+export default function DefaultNavbar() {
+  const theme = {
     "root": {
         "base": "bg-gray-400 px-2 py-2.5 dark:border-gray-700 dark:bg-gray-800 sm:px-4",
         "rounded": {
@@ -49,8 +50,6 @@ const theme = {
         "icon": "h-6 w-6 shrink-0"
     }
 }
-
-export default function DefaultNavbar() {
   return (
     <Flowbite theme={{ theme }}>
         <Navbar fluid rounded>

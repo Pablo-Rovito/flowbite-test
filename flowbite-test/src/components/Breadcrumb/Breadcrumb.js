@@ -3,7 +3,8 @@
 import { Breadcrumb } from 'flowbite-react';
 import { HiHome } from 'react-icons/hi';
 
-const theme = {
+export default function DefaultBreadcrumb() {
+  const theme = {
     "root": {
         "base": "",
         "list": "flex items-center"
@@ -18,8 +19,6 @@ const theme = {
         "icon": "mr-6 h-4 w-4"
     }
 }
-
-export default function DefaultBreadcrumb() {
   return (
     <Breadcrumb theme={{ theme }} aria-label="Default breadcrumb example" className="bg-gray-50 px-5 py-3 dark:bg-gray-900"
 >
